@@ -1,4 +1,6 @@
 #include <stdio.h>
+// free 函数
+#include <malloc.h>
 
 typedef int ElementType;
 
@@ -88,6 +90,9 @@ void PostOrderTraversal2(BinTree BT) {
 
 
 int main(int argc, char const argvp[]) {
+    printf("oo");
+
+    return 0;
 
 }
 
@@ -115,7 +120,7 @@ ElementType Pop(Stack S){
 	Stack First;
 	ElementType TopVal;
 	if(IsEmpty(S)){
-		printf("��ջ��");
+		printf("stack is empty");
 		return;
 	}else{
 		First = S->Next;
